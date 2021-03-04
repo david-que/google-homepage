@@ -9,6 +9,10 @@ li a {
   font-size: 14px;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 .navbar_l {
   display: flex;
   float: left;
@@ -31,8 +35,8 @@ li a {
   padding: 10px;
 }
 
-#sign_in_btn {
-  background-color: rgb(26, 115, 232);
+#sign_in_btn a {
+  background-color: rgb(30, 114, 224);
   border-radius: 4px;
   color: white;
   padding-right: 23px;
@@ -40,6 +44,12 @@ li a {
   padding-top: 9px;
   padding-bottom: 9px;
   border-style: none;
+  text-decoration: none;
+}
+
+#sign_in_btn a:hover {
+  cursor: pointer;
+  background-color: rgb(54, 125, 219);
 }
 
 header:after {
@@ -63,17 +73,32 @@ header:after {
 }
 
 .searchbox {
-  padding-top: 27px;
-}
-.searchbox input {
   display: block;
   margin: auto;
-  width: 570px;
-  height: 40px;
+  margin-top: 27px;
+  width: 582px;
+  height: 43px;
   border-style: solid;
   border-radius: 20px;
-  border-width: 1px;
+  border: 1px solid;
   border-color: lightgray;
+}
+
+.searchbox:hover {
+  box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+}
+
+.searchbox input {
+  height: 34px;
+  width: 487px;
+  border-style: none;
+  margin-left: 40px;
+  margin-top: 2px;
+  font-size: 16px;
+}
+
+.searchbox input:focus {
+  outline: none;
 }
 
 .search_btns {
@@ -92,6 +117,11 @@ header:after {
   margin-left: 4px;
   height: 36px;
   border-radius: 4px;
+}
+
+.search_btns input:hover {
+  cursor: pointer;
+  border: 1px solid rgb(216, 216, 216);
 }
 
 footer {
